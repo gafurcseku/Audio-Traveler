@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		090A4F7826F5907D00F41B25 /* Audio_TravelerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F7726F5907D00F41B25 /* Audio_TravelerApp.swift */; };
+		090A4F7C26F5907E00F41B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090A4F7B26F5907E00F41B25 /* Assets.xcassets */; };
+		090A4F7F26F5907E00F41B25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090A4F7E26F5907E00F41B25 /* Preview Assets.xcassets */; };
+		090A4F9026F5935200F41B25 /* LoginAccountUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F8E26F5935200F41B25 /* LoginAccountUIView.swift */; };
+		090A4F9126F5935200F41B25 /* CreateAccountUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F8F26F5935200F41B25 /* CreateAccountUIView.swift */; };
+		090A4F9426F5937F00F41B25 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F9226F5937F00F41B25 /* ActivityIndicator.swift */; };
+		090A4F9526F5937F00F41B25 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F9326F5937F00F41B25 /* LoadingView.swift */; };
+		090A4F9726F5938C00F41B25 /* ThemeTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F9626F5938C00F41B25 /* ThemeTextFieldStyle.swift */; };
+		090A4F9926F5939600F41B25 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F9826F5939600F41B25 /* AccountViewModel.swift */; };
+		090A4F9B26F593B200F41B25 /* launcher.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A4F9A26F593B200F41B25 /* launcher.storyboard */; };
+		090A4F9E26F5940E00F41B25 /* TravelerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4F9D26F5940E00F41B25 /* TravelerExtension.swift */; };
+		090A4FA126F59E4300F41B25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FA026F59E4300F41B25 /* User.swift */; };
+		090A4FA326F5A36100F41B25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 090A4FA226F5A36100F41B25 /* GoogleService-Info.plist */; };
+		090A4FA526F5A3B600F41B25 /* Constansts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FA426F5A3B600F41B25 /* Constansts.swift */; };
+		090A4FA726F5AA7600F41B25 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FA626F5AA7600F41B25 /* Helper.swift */; };
+		090A4FAA26F6076B00F41B25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FA926F6076B00F41B25 /* MainView.swift */; };
+		090A4FAC26F6077900F41B25 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FAB26F6077900F41B25 /* MainViewModel.swift */; };
+		090A4FAF26F60DAB00F41B25 /* GoogleMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FAE26F60DAB00F41B25 /* GoogleMapsView.swift */; };
+		090A4FB126F60F9D00F41B25 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FB026F60F9D00F41B25 /* LocationManager.swift */; };
+		090A4FB426F6229300F41B25 /* TravelerAudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FB326F6229300F41B25 /* TravelerAudioRecorder.swift */; };
+		090A4FB926F627D700F41B25 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FB626F627D700F41B25 /* ViewExtension.swift */; };
+		090A4FBA26F627D700F41B25 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FB726F627D700F41B25 /* RoundedCorner.swift */; };
+		090A4FBB26F627D700F41B25 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FB826F627D700F41B25 /* BottomSheet.swift */; };
+		090A4FBD26F651E100F41B25 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FBC26F651E100F41B25 /* RecordView.swift */; };
+		090A4FBF26F7673900F41B25 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FBE26F7673900F41B25 /* BottomBarView.swift */; };
+		090A4FC126F7C08200F41B25 /* AudioLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FC026F7C08200F41B25 /* AudioLocation.swift */; };
+		09F45AFA270020D5002DC0D4 /* TravelAudioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */; };
+		2269A36C105D4A8784B09314 /* Pods_Audio_Traveler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A523D5E21AD2D36962324966 /* Pods_Audio_Traveler.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		090A4F7426F5907D00F41B25 /* Audio Traveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audio Traveler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		090A4F7726F5907D00F41B25 /* Audio_TravelerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_TravelerApp.swift; sourceTree = "<group>"; };
+		090A4F7B26F5907E00F41B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		090A4F7E26F5907E00F41B25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		090A4F8026F5907E00F41B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		090A4F8E26F5935200F41B25 /* LoginAccountUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAccountUIView.swift; sourceTree = "<group>"; };
+		090A4F8F26F5935200F41B25 /* CreateAccountUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountUIView.swift; sourceTree = "<group>"; };
+		090A4F9226F5937F00F41B25 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		090A4F9326F5937F00F41B25 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		090A4F9626F5938C00F41B25 /* ThemeTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTextFieldStyle.swift; sourceTree = "<group>"; };
+		090A4F9826F5939600F41B25 /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		090A4F9A26F593B200F41B25 /* launcher.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = launcher.storyboard; sourceTree = "<group>"; };
+		090A4F9D26F5940E00F41B25 /* TravelerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelerExtension.swift; sourceTree = "<group>"; };
+		090A4FA026F59E4300F41B25 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		090A4FA226F5A36100F41B25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		090A4FA426F5A3B600F41B25 /* Constansts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constansts.swift; sourceTree = "<group>"; };
+		090A4FA626F5AA7600F41B25 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		090A4FA926F6076B00F41B25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		090A4FAB26F6077900F41B25 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		090A4FAE26F60DAB00F41B25 /* GoogleMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsView.swift; sourceTree = "<group>"; };
+		090A4FB026F60F9D00F41B25 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		090A4FB326F6229300F41B25 /* TravelerAudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelerAudioRecorder.swift; sourceTree = "<group>"; };
+		090A4FB626F627D700F41B25 /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		090A4FB726F627D700F41B25 /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		090A4FB826F627D700F41B25 /* BottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		090A4FBC26F651E100F41B25 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		090A4FBE26F7673900F41B25 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		090A4FC026F7C08200F41B25 /* AudioLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLocation.swift; sourceTree = "<group>"; };
+		09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAudioPlayView.swift; sourceTree = "<group>"; };
+		7778DDBFCADE4E8AC32D3C28 /* Pods-Audio Traveler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Traveler.debug.xcconfig"; path = "Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler.debug.xcconfig"; sourceTree = "<group>"; };
+		A523D5E21AD2D36962324966 /* Pods_Audio_Traveler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audio_Traveler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CA1C58439241B9D5384F56 /* Pods-Audio Traveler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Traveler.release.xcconfig"; path = "Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090A4F7126F5907D00F41B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2269A36C105D4A8784B09314 /* Pods_Audio_Traveler.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090A4F6B26F5907D00F41B25 = {
+			isa = PBXGroup;
+			children = (
+				090A4F7626F5907D00F41B25 /* Audio Traveler */,
+				090A4F7526F5907D00F41B25 /* Products */,
+				4D39FA012DE3DD227587B3A7 /* Pods */,
+				FAE66388D9EB2A5052400254 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		090A4F7526F5907D00F41B25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F7426F5907D00F41B25 /* Audio Traveler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		090A4F7626F5907D00F41B25 /* Audio Traveler */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FA226F5A36100F41B25 /* GoogleService-Info.plist */,
+				090A4F8826F5928100F41B25 /* Application */,
+				090A4F7726F5907D00F41B25 /* Audio_TravelerApp.swift */,
+				090A4F7B26F5907E00F41B25 /* Assets.xcassets */,
+				090A4F8026F5907E00F41B25 /* Info.plist */,
+				090A4F7D26F5907E00F41B25 /* Preview Content */,
+			);
+			path = "Audio Traveler";
+			sourceTree = "<group>";
+		};
+		090A4F7D26F5907E00F41B25 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F7E26F5907E00F41B25 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		090A4F8826F5928100F41B25 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FB526F627C200F41B25 /* BottomSheet */,
+				090A4FB226F6227A00F41B25 /* Audio Manager */,
+				090A4FAD26F60D9800F41B25 /* Map */,
+				090A4FA826F6075900F41B25 /* Main */,
+				090A4F9F26F59E3100F41B25 /* Model */,
+				090A4F9C26F593F700F41B25 /* Extension */,
+				090A4F8D26F592BF00F41B25 /* ViewModel */,
+				090A4F8C26F592B500F41B25 /* Utility */,
+				090A4F8B26F592AB00F41B25 /* Splash */,
+				090A4F8A26F592A000F41B25 /* LoadingView */,
+				090A4F8926F5929400F41B25 /* Account */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		090A4F8926F5929400F41B25 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F8F26F5935200F41B25 /* CreateAccountUIView.swift */,
+				090A4F8E26F5935200F41B25 /* LoginAccountUIView.swift */,
+				090A4FAB26F6077900F41B25 /* MainViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		090A4F8A26F592A000F41B25 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F9226F5937F00F41B25 /* ActivityIndicator.swift */,
+				090A4F9326F5937F00F41B25 /* LoadingView.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		090A4F8B26F592AB00F41B25 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F9A26F593B200F41B25 /* launcher.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		090A4F8C26F592B500F41B25 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F9626F5938C00F41B25 /* ThemeTextFieldStyle.swift */,
+				090A4FA426F5A3B600F41B25 /* Constansts.swift */,
+				090A4FA626F5AA7600F41B25 /* Helper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		090A4F8D26F592BF00F41B25 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F9826F5939600F41B25 /* AccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		090A4F9C26F593F700F41B25 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				090A4F9D26F5940E00F41B25 /* TravelerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		090A4F9F26F59E3100F41B25 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FA026F59E4300F41B25 /* User.swift */,
+				090A4FC026F7C08200F41B25 /* AudioLocation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		090A4FA826F6075900F41B25 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FA926F6076B00F41B25 /* MainView.swift */,
+				090A4FBC26F651E100F41B25 /* RecordView.swift */,
+				090A4FBE26F7673900F41B25 /* BottomBarView.swift */,
+				09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		090A4FAD26F60D9800F41B25 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FAE26F60DAB00F41B25 /* GoogleMapsView.swift */,
+				090A4FB026F60F9D00F41B25 /* LocationManager.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		090A4FB226F6227A00F41B25 /* Audio Manager */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FB326F6229300F41B25 /* TravelerAudioRecorder.swift */,
+			);
+			path = "Audio Manager";
+			sourceTree = "<group>";
+		};
+		090A4FB526F627C200F41B25 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				090A4FB826F627D700F41B25 /* BottomSheet.swift */,
+				090A4FB726F627D700F41B25 /* RoundedCorner.swift */,
+				090A4FB626F627D700F41B25 /* ViewExtension.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		4D39FA012DE3DD227587B3A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7778DDBFCADE4E8AC32D3C28 /* Pods-Audio Traveler.debug.xcconfig */,
+				F5CA1C58439241B9D5384F56 /* Pods-Audio Traveler.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAE66388D9EB2A5052400254 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A523D5E21AD2D36962324966 /* Pods_Audio_Traveler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		090A4F7326F5907D00F41B25 /* Audio Traveler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 090A4F8326F5907E00F41B25 /* Build configuration list for PBXNativeTarget "Audio Traveler" */;
+			buildPhases = (
+				C83D01E715B7C910086D7927 /* [CP] Check Pods Manifest.lock */,
+				090A4F7026F5907D00F41B25 /* Sources */,
+				090A4F7126F5907D00F41B25 /* Frameworks */,
+				090A4F7226F5907D00F41B25 /* Resources */,
+				A24ACED60307303E653F17AE /* [CP] Embed Pods Frameworks */,
+				8CAE3938EBA7AA6DE2090A0C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Audio Traveler";
+			productName = "Audio Traveler";
+			productReference = 090A4F7426F5907D00F41B25 /* Audio Traveler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		090A4F6C26F5907D00F41B25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					090A4F7326F5907D00F41B25 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 090A4F6F26F5907D00F41B25 /* Build configuration list for PBXProject "Audio Traveler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 090A4F6B26F5907D00F41B25;
+			productRefGroup = 090A4F7526F5907D00F41B25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				090A4F7326F5907D00F41B25 /* Audio Traveler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		090A4F7226F5907D00F41B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090A4F7F26F5907E00F41B25 /* Preview Assets.xcassets in Resources */,
+				090A4FA326F5A36100F41B25 /* GoogleService-Info.plist in Resources */,
+				090A4F9B26F593B200F41B25 /* launcher.storyboard in Resources */,
+				090A4F7C26F5907E00F41B25 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CAE3938EBA7AA6DE2090A0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24ACED60307303E653F17AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C83D01E715B7C910086D7927 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audio Traveler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		090A4F7026F5907D00F41B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				090A4FA726F5AA7600F41B25 /* Helper.swift in Sources */,
+				090A4FAA26F6076B00F41B25 /* MainView.swift in Sources */,
+				090A4FB126F60F9D00F41B25 /* LocationManager.swift in Sources */,
+				090A4FB426F6229300F41B25 /* TravelerAudioRecorder.swift in Sources */,
+				090A4F9726F5938C00F41B25 /* ThemeTextFieldStyle.swift in Sources */,
+				090A4F9E26F5940E00F41B25 /* TravelerExtension.swift in Sources */,
+				09F45AFA270020D5002DC0D4 /* TravelAudioPlayView.swift in Sources */,
+				090A4F9926F5939600F41B25 /* AccountViewModel.swift in Sources */,
+				090A4FAC26F6077900F41B25 /* MainViewModel.swift in Sources */,
+				090A4F9426F5937F00F41B25 /* ActivityIndicator.swift in Sources */,
+				090A4F7826F5907D00F41B25 /* Audio_TravelerApp.swift in Sources */,
+				090A4FAF26F60DAB00F41B25 /* GoogleMapsView.swift in Sources */,
+				090A4FA526F5A3B600F41B25 /* Constansts.swift in Sources */,
+				090A4FBF26F7673900F41B25 /* BottomBarView.swift in Sources */,
+				090A4FC126F7C08200F41B25 /* AudioLocation.swift in Sources */,
+				090A4FBA26F627D700F41B25 /* RoundedCorner.swift in Sources */,
+				090A4FBD26F651E100F41B25 /* RecordView.swift in Sources */,
+				090A4FBB26F627D700F41B25 /* BottomSheet.swift in Sources */,
+				090A4FA126F59E4300F41B25 /* User.swift in Sources */,
+				090A4F9126F5935200F41B25 /* CreateAccountUIView.swift in Sources */,
+				090A4FB926F627D700F41B25 /* ViewExtension.swift in Sources */,
+				090A4F9026F5935200F41B25 /* LoginAccountUIView.swift in Sources */,
+				090A4F9526F5937F00F41B25 /* LoadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		090A4F8126F5907E00F41B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		090A4F8226F5907E00F41B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		090A4F8426F5907E00F41B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7778DDBFCADE4E8AC32D3C28 /* Pods-Audio Traveler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Audio Traveler/Preview Content\"";
+				DEVELOPMENT_TEAM = R77NDM9JB4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Audio Traveler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Audio-Traveler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		090A4F8526F5907E00F41B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5CA1C58439241B9D5384F56 /* Pods-Audio Traveler.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Audio Traveler/Preview Content\"";
+				DEVELOPMENT_TEAM = R77NDM9JB4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Audio Traveler/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Audio-Traveler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		090A4F6F26F5907D00F41B25 /* Build configuration list for PBXProject "Audio Traveler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090A4F8126F5907E00F41B25 /* Debug */,
+				090A4F8226F5907E00F41B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		090A4F8326F5907E00F41B25 /* Build configuration list for PBXNativeTarget "Audio Traveler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				090A4F8426F5907E00F41B25 /* Debug */,
+				090A4F8526F5907E00F41B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 090A4F6C26F5907D00F41B25 /* Project object */;
+}
