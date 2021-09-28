@@ -51,7 +51,6 @@ public struct BottomBar : View {
                 }
             }
         }
-        .padding()
         .animation(.default)
     }
 }
