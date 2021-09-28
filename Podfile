@@ -13,6 +13,8 @@ target 'Audio Traveler' do
   
   pod 'GoogleMaps'
   
+ ## pod 'BottomSheet', :git => 'https://github.com/weitieda/bottom-sheet.git'
+  
   # Pods for Audio Traveler
   
   

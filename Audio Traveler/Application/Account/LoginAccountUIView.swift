@@ -79,7 +79,7 @@ struct LoginAccountUIView: View {
                         .alert(isPresented:self.$isError, title: "Alert", message: self.message)
                         .overlay(
                             NavigationLink(
-                                destination: MainView(),
+                                destination: BottomBaseView(),
                                 isActive: self.$userLogin){}
                         )
                         Spacer()
@@ -103,6 +103,9 @@ struct LoginAccountUIView: View {
                     self.password = "123456"
                     #endif
                    
+                    if(Helper.isLoggedIn){
+                        self.userLogin = true
+                    }
                 })
             }
             .background(Color.black)

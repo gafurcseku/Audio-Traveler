@@ -8,49 +8,21 @@
 import SwiftUI
 
 struct BottomBarView: View {
-    @State var selectedIndex:Int = 0
+    @Binding var selectedIndex:Int
+    
+    let items: [BottomBarItem] = [
+        BottomBarItem(icon: "house.fill", title: "Home", color: .purple),
+        BottomBarItem(icon: "bookmark.fill", title: "Notification", color: .pink),
+        BottomBarItem(icon: "arrow.down.left.circle.fill", title: "Log out", color: .orange)
+        ]
     
     var body: some View {
-        GeometryReader { geo in
-           
-                HStack {
-                    Button(action: {
-                        self.selectedIndex = 0
-                    }, label: {
-                        Image(systemName: "house.fill").resizable().frame(width: 40, height: 40, alignment: .center)
-                            .foregroundColor(selectedIndex == 0 ? .white : .blue)
-                    })
-                    .frame(width: geo.size.width/3, height: geo.size.height)
-                    .background(selectedIndex == 0 ? Color.black : Color.white)
-                    
-                    Button(action: {
-                        self.selectedIndex = 1
-                    }, label: {
-                        Image(systemName: "bookmark.fill").resizable().frame(width: 40, height: 40, alignment: .center)
-                            .foregroundColor(selectedIndex == 1 ? .white : .blue)
-                    })
-                    .frame(width: geo.size.width/3,height: geo.size.height)
-                    .background(selectedIndex == 1 ? Color.black : Color.white)
-                    
-                    Button(action: {
-                        self.selectedIndex = 2
-                    }, label: {
-                        Text("Logout")
-                            .foregroundColor(selectedIndex == 2 ? .white : .blue)
-                    })
-                    .frame(width: geo.size.width/3,height: geo.size.height)
-                    .background(selectedIndex == 2 ? Color.black : Color.white)
-                }
-          
-        }
-        .frame(height: 60, alignment: .center)
-        .background(Color.white)
-        
+        BottomBar(selectedIndex: $selectedIndex, items: items)
     }
 }
 
 struct BottomBarView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomBarView()
+        BottomBarView(selectedIndex: Binding<Int>.constant(0))
     }
 }

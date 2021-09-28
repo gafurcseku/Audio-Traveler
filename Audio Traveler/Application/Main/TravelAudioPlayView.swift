@@ -14,6 +14,7 @@ struct TravelAudioPlayView: View {
     @State var finish = false
     @State var playing = false
     @State var del: AVdelegate? = nil
+    @State var timer: Timer? = nil
     
     var title:String = ""
     var url:String = ""
@@ -89,14 +90,22 @@ struct TravelAudioPlayView: View {
                 self.del = AVdelegate() { finish in
                     if(finish){
                         self.width = 0
+                        self.timer?.invalidate()
+                        self.timer = nil
                         self.showPlayer = false
                         self.finish = true
-                       //
                     }
                     
                 }
-                Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (_) in
-                    print("ISPLAY1")
+                timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
+                    if(!self.showPlayer){
+                        self.viewModel.player.stop()
+                        self.width = 0
+                        self.timer?.invalidate()
+                        self.timer = nil
+                        self.showPlayer = false
+                        self.finish = true
+                    }
                     if self.viewModel.player.isPlaying{
                         print("ISPLAY2")
                         let screen = UIScreen.main.bounds.width - 30

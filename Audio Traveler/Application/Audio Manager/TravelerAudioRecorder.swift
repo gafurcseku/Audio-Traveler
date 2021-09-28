@@ -65,7 +65,7 @@ class TravelerAudioRecorder: ObservableObject{
         }
     }
     
-    func stopRecording(location:CLLocationCoordinate2D, title:String) {
+    func stopRecording(location:CLLocationCoordinate2D, title:String,complete:@escaping (AudioLocation) -> Void) {
         isLoading = true
         audioRecorder.stop()
         isRecording = false
@@ -75,6 +75,7 @@ class TravelerAudioRecorder: ObservableObject{
             let audio = AudioLocation(location: GeoPoint(latitude: location.latitude, longitude: location.longitude), file: downloadUrl ?? "", title: title, userId: Helper.userID)
             do{
                 _ = try audioRef.addDocument(from: audio)
+                complete(audio)
                 isLoading = false
             }catch let error {
                 isLoading = false
@@ -86,7 +87,7 @@ class TravelerAudioRecorder: ObservableObject{
     
     func startTimer(){
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
-            print(self.seconds)
+            
             if self.seconds == 59 {
                 self.seconds = 0
                 if self.minutes == 59 {

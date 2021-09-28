@@ -45,7 +45,7 @@ struct GoogleMapsView : UIViewRepresentable {
             
             let marker = GMSMarker(position: CLLocationCoordinate2D(latitude: $0.location.latitude, longitude: $0.location.longitude))
                 marker.title = $0.title
-            marker.snippet = $0.title
+           
             marker.userData = $0.id.uuidString
             marker.map = mapView
         }

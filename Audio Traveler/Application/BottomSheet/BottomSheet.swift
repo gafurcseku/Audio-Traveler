@@ -54,6 +54,7 @@ public struct BottomSheet<Content: View>: View {
             ZStack {
                 self.fullScreenLightGrayOverlay()
                 VStack(spacing: 0) {
+                    self.topBar(geometry: geometry)
                     VStack(spacing: -8) {
                         Spacer()
                         self.content.padding(.bottom, geometry.safeAreaInsets.bottom)
@@ -65,6 +66,7 @@ public struct BottomSheet<Content: View>: View {
                 .cornerRadius(self.topBarCornerRadius, corners: [.topLeft, .topRight])
                 .animation(.interactiveSpring())
                 .offset(y: self.isPresented ? (buttomSheetShow(geometry: geometry)) : (geometry.size.height + self.height + geometry.safeAreaInsets.bottom))
+//                .offset(y: self.isPresented ? (geometry.size.height/2 - self.height/2 + geometry.safeAreaInsets.bottom + self.draggedOffset) : (geometry.size.height/2 + self.height/2 + geometry.safeAreaInsets.bottom))
             }
         }
     }
@@ -86,7 +88,7 @@ public struct BottomSheet<Content: View>: View {
     fileprivate func topBar(geometry: GeometryProxy) -> some View {
         ZStack {
             RoundedRectangle(cornerRadius: 6)
-                .fill(Color.black)
+                .fill(Color.secondary)
                 .frame(width: 40, height: 6)
                 .opacity(showTopIndicator ? 1 : 0)
         }
@@ -95,7 +97,7 @@ public struct BottomSheet<Content: View>: View {
         .gesture(
             DragGesture()
                 .onChanged({ (value) in
-                     
+                    
                     let offsetY = value.translation.height
                     self.draggedOffset = offsetY
                     

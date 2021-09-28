@@ -9,14 +9,13 @@
 import SwiftUI
 
 public extension View {
-    
     func bottomSheet<Content: View>(
         isPresented: Binding<Bool>,
         height: CGFloat,
         topBarHeight: CGFloat = 30,
-        topBarCornerRadius: CGFloat? = 20,
-        contentBackgroundColor: Color = Color.white,
-        topBarBackgroundColor: Color = Color.black,
+        topBarCornerRadius: CGFloat? = nil,
+        contentBackgroundColor: Color = Color(.systemBackground),
+        topBarBackgroundColor: Color = Color(.systemBackground),
         showTopIndicator: Bool = true,
         @ViewBuilder content: @escaping () -> Content
     ) -> some View {
