@@ -30,6 +30,8 @@
 		090A4FBD26F651E100F41B25 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FBC26F651E100F41B25 /* RecordView.swift */; };
 		090A4FBF26F7673900F41B25 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FBE26F7673900F41B25 /* BottomBarView.swift */; };
 		090A4FC126F7C08200F41B25 /* AudioLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A4FC026F7C08200F41B25 /* AudioLocation.swift */; };
+		092E693F270407AF004BBA0D /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092E693E270407AF004BBA0D /* NotificationView.swift */; };
+		092E694127040911004BBA0D /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092E694027040911004BBA0D /* NotificationViewModel.swift */; };
 		094AE5562702028B0058BE2F /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AE5532702028B0058BE2F /* RoundedCorner.swift */; };
 		094AE5572702028B0058BE2F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AE5542702028B0058BE2F /* ViewExtension.swift */; };
 		094AE5582702028B0058BE2F /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AE5552702028B0058BE2F /* BottomSheet.swift */; };
@@ -38,6 +40,7 @@
 		0973BBC82702BE8600A2BED7 /* BarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973BBC42702BE8600A2BED7 /* BarBuilder.swift */; };
 		0973BBC92702BE8600A2BED7 /* BottomBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973BBC52702BE8600A2BED7 /* BottomBarItemView.swift */; };
 		0973BBCB2702C4EF00A2BED7 /* BottomBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973BBCA2702C4EF00A2BED7 /* BottomBaseView.swift */; };
+		0973BBCD2702DB3100A2BED7 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973BBCC2702DB3100A2BED7 /* Notification.swift */; };
 		09F45AFA270020D5002DC0D4 /* TravelAudioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */; };
 		2269A36C105D4A8784B09314 /* Pods_Audio_Traveler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A523D5E21AD2D36962324966 /* Pods_Audio_Traveler.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +71,8 @@
 		090A4FBC26F651E100F41B25 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		090A4FBE26F7673900F41B25 /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		090A4FC026F7C08200F41B25 /* AudioLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioLocation.swift; sourceTree = "<group>"; };
+		092E693E270407AF004BBA0D /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		092E694027040911004BBA0D /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 		094AE5532702028B0058BE2F /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		094AE5542702028B0058BE2F /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		094AE5552702028B0058BE2F /* BottomSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		0973BBC42702BE8600A2BED7 /* BarBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarBuilder.swift; sourceTree = "<group>"; };
 		0973BBC52702BE8600A2BED7 /* BottomBarItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarItemView.swift; sourceTree = "<group>"; };
 		0973BBCA2702C4EF00A2BED7 /* BottomBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBaseView.swift; sourceTree = "<group>"; };
+		0973BBCC2702DB3100A2BED7 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelAudioPlayView.swift; sourceTree = "<group>"; };
 		7778DDBFCADE4E8AC32D3C28 /* Pods-Audio Traveler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audio Traveler.debug.xcconfig"; path = "Target Support Files/Pods-Audio Traveler/Pods-Audio Traveler.debug.xcconfig"; sourceTree = "<group>"; };
 		A523D5E21AD2D36962324966 /* Pods_Audio_Traveler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audio_Traveler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				090A4F9826F5939600F41B25 /* AccountViewModel.swift */,
+				092E694027040911004BBA0D /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -210,6 +217,7 @@
 			children = (
 				090A4FA026F59E4300F41B25 /* User.swift */,
 				090A4FC026F7C08200F41B25 /* AudioLocation.swift */,
+				0973BBCC2702DB3100A2BED7 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 				090A4FBE26F7673900F41B25 /* BottomBarView.swift */,
 				09F45AF9270020D5002DC0D4 /* TravelAudioPlayView.swift */,
 				0973BBCA2702C4EF00A2BED7 /* BottomBaseView.swift */,
+				092E693E270407AF004BBA0D /* NotificationView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -428,6 +437,7 @@
 				094AE5562702028B0058BE2F /* RoundedCorner.swift in Sources */,
 				09F45AFA270020D5002DC0D4 /* TravelAudioPlayView.swift in Sources */,
 				090A4F9926F5939600F41B25 /* AccountViewModel.swift in Sources */,
+				092E694127040911004BBA0D /* NotificationViewModel.swift in Sources */,
 				090A4FAC26F6077900F41B25 /* MainViewModel.swift in Sources */,
 				090A4F9426F5937F00F41B25 /* ActivityIndicator.swift in Sources */,
 				090A4F7826F5907D00F41B25 /* Audio_TravelerApp.swift in Sources */,
@@ -435,6 +445,7 @@
 				0973BBCB2702C4EF00A2BED7 /* BottomBaseView.swift in Sources */,
 				090A4FA526F5A3B600F41B25 /* Constansts.swift in Sources */,
 				090A4FBF26F7673900F41B25 /* BottomBarView.swift in Sources */,
+				0973BBCD2702DB3100A2BED7 /* Notification.swift in Sources */,
 				090A4FC126F7C08200F41B25 /* AudioLocation.swift in Sources */,
 				090A4FBD26F651E100F41B25 /* RecordView.swift in Sources */,
 				090A4FA126F59E4300F41B25 /* User.swift in Sources */,
@@ -442,6 +453,7 @@
 				090A4F9026F5935200F41B25 /* LoginAccountUIView.swift in Sources */,
 				090A4F9526F5937F00F41B25 /* LoadingView.swift in Sources */,
 				0973BBC92702BE8600A2BED7 /* BottomBarItemView.swift in Sources */,
+				092E693F270407AF004BBA0D /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +587,7 @@
 				DEVELOPMENT_TEAM = R77NDM9JB4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Audio Traveler/Info.plist";
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

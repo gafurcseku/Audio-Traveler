@@ -9,6 +9,7 @@ import SwiftUI
 import GoogleMaps
 
 struct MainView: View {
+    @Binding var badgeCount:Int
     @StateObject var viewModel = TravelerAudioRecorder()
     @State var showRecordButton:CGFloat = 0
     @State var stopRecord:Bool = false
@@ -61,6 +62,7 @@ struct MainView: View {
                             }
                             viewModel.stopRecording(location: self.location, title: title){ audio in
                                 audioList.append(audio)
+                                self.badgeCount += 1
                             }
                             stopTimer()
                         }
@@ -118,6 +120,6 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(badgeCount: .constant(0))
     }
 }

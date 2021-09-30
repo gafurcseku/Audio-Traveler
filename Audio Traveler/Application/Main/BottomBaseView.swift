@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct BottomBaseView: View {
+    @StateObject var viewModel = NotificationViewModel()
     @State var selectedIndex:Int = 0
+    @State var badgeCount:Int = 0
     @Environment(\.presentationMode) var presentationMode:Binding<PresentationMode>
     var body: some View {
         VStack{
             if(self.selectedIndex == 0) {
-                MainView()
+                MainView(badgeCount: self.$badgeCount)
             }else if(self.selectedIndex == 1) {
-                Text("Notification")
+                NotificationView(selected:self.$selectedIndex)
             }else if(self.selectedIndex == 2) {
                 Text("Logout")
                     .onAppear {
@@ -26,7 +28,12 @@ struct BottomBaseView: View {
                 
             }
             Spacer()
-            BottomBarView(selectedIndex: self.$selectedIndex)
+            BottomBarView(selectedIndex: self.$selectedIndex, notiBadge: self.$badgeCount)
+                .onAppear {
+                    viewModel.getNotificationCount() { count in
+                        self.badgeCount = count
+                    }
+                }
         }
     }
 }

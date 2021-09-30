@@ -72,9 +72,13 @@ class TravelerAudioRecorder: ObservableObject{
         uploadAudioFile(url: audioFileUrl) { [self] downloadUrl in
             print(downloadUrl as Any)
             let audioRef =  db.collection(Constansts.AUDIOFILE)
+            let notification = db.collection(Constansts.NOTIFICATION)
             let audio = AudioLocation(location: GeoPoint(latitude: location.latitude, longitude: location.longitude), file: downloadUrl ?? "", title: title, userId: Helper.userID)
+            
+            let notify = Notification(date: Date().toString(dateFormat: "dd MMM yyyy, hh:mm"), title: title, status: false)
             do{
                 _ = try audioRef.addDocument(from: audio)
+                _ = try notification.addDocument(from: notify)
                 complete(audio)
                 isLoading = false
             }catch let error {
@@ -137,7 +141,7 @@ class TravelerAudioRecorder: ObservableObject{
             .getDocuments { (querySnapshot, err) in
                 if let error = err {
                     self.isLoading = false
-                    print("Error getting user login: \(error)")
+                    print("Error getting Audio List: \(error)")
                 }else {
                     var list = [AudioLocation]()
                     for document in querySnapshot!.documents {
@@ -152,7 +156,7 @@ class TravelerAudioRecorder: ObservableObject{
                                 list.append(audio)
                             }
                         case .failure(let error):
-                            print("Error decoding city: \(error)")
+                            print("Error decoding audio: \(error)")
                         }
                     }
                     self.isLoading = false

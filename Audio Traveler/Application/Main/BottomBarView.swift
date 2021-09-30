@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BottomBarView: View {
     @Binding var selectedIndex:Int
+    @Binding var notiBadge:Int
     
     let items: [BottomBarItem] = [
         BottomBarItem(icon: "house.fill", title: "Home", color: .purple),
@@ -17,12 +18,12 @@ struct BottomBarView: View {
         ]
     
     var body: some View {
-        BottomBar(selectedIndex: $selectedIndex, items: items)
+        BottomBar(selectedIndex: $selectedIndex, items: items,notiBadge:$notiBadge)
     }
 }
 
 struct BottomBarView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomBarView(selectedIndex: Binding<Int>.constant(0))
+        BottomBarView(selectedIndex: Binding<Int>.constant(0),notiBadge:Binding<Int>.constant(1))
     }
 }

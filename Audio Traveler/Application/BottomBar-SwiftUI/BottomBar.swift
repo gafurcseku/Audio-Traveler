@@ -10,24 +10,25 @@ import SwiftUI
 
 public struct BottomBar : View {
     @Binding public var selectedIndex: Int
-    
     public let items: [BottomBarItem]
+    @Binding public var notiBadge: Int
     
-    public init(selectedIndex: Binding<Int>, items: [BottomBarItem]) {
+    public init(selectedIndex: Binding<Int>, items: [BottomBarItem],notiBadge: Binding<Int>) {
         self._selectedIndex = selectedIndex
         self.items = items
+        self._notiBadge = notiBadge
     }
     
     
-    public init(selectedIndex: Binding<Int>, @BarBuilder items: () -> [BottomBarItem]){
+    public init(selectedIndex: Binding<Int>, @BarBuilder items: () -> [BottomBarItem],notiBadge:Binding<Int>){
         self = BottomBar(selectedIndex: selectedIndex,
-                         items: items())
+                         items: items(),notiBadge:notiBadge)
     }
     
     
-    public init(selectedIndex: Binding<Int>, item: BottomBarItem){
+    public init(selectedIndex: Binding<Int>, item: BottomBarItem,notiBadge:Binding<Int>){
         self = BottomBar(selectedIndex: selectedIndex,
-                         items: [item])
+                         items: [item],notiBadge: notiBadge)
     }
     
     
@@ -37,7 +38,7 @@ public struct BottomBar : View {
         }) {
             BottomBarItemView(selected: self.$selectedIndex,
                               index: index,
-                              item: items[index])
+                              item: items[index],notiBadge: self.$notiBadge)
         }
     }
     
@@ -63,7 +64,7 @@ struct BottomBar_Previews : PreviewProvider {
             BottomBarItem(icon: "heart", title: "Likes", color: .pink),
             BottomBarItem(icon: "magnifyingglass", title: "Search", color: .orange),
             BottomBarItem(icon: "person.fill", title: "Profile", color: .blue)
-        ])
+        ], notiBadge: .constant(1))
     }
 }
 #endif

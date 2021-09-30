@@ -19,6 +19,7 @@ struct TravelAudioPlayView: View {
     var title:String = ""
     var url:String = ""
     @Binding var showPlayer:Bool
+    @State var isPlaying:Bool = false
     
    
     
@@ -41,9 +42,15 @@ struct TravelAudioPlayView: View {
                         self.viewModel.player.pause()
                         self.playing = false
                     }else{
-                        if let del = self.del {
-                            viewModel.startPlaying(url: self.url,del: del)
+                        if(self.isPlaying){
+                            self.viewModel.player.play()
                             self.playing = true
+                        }else{
+                            if let del = self.del {
+                                viewModel.startPlaying(url: self.url,del: del)
+                                self.playing = true
+                                self.isPlaying = true
+                            }
                         }
                         
                     }
@@ -89,30 +96,30 @@ struct TravelAudioPlayView: View {
             .onAppear {
                 self.del = AVdelegate() { finish in
                     if(finish){
+                        print("did finish timer")
                         self.width = 0
-                        self.timer?.invalidate()
-                        self.timer = nil
                         self.showPlayer = false
                         self.finish = true
+                        self.isPlaying = false
                     }
                     
                 }
-                timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
-                    if(!self.showPlayer){
-                        self.viewModel.player.stop()
-                        self.width = 0
-                        self.timer?.invalidate()
-                        self.timer = nil
-                        self.showPlayer = false
-                        self.finish = true
-                    }
-                    if self.viewModel.player.isPlaying{
+                if(timer == nil){
+                    timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { tempTimer in
                         print("ISPLAY2")
-                        let screen = UIScreen.main.bounds.width - 30
-                        
-                        let value = self.viewModel.player.currentTime / self.viewModel.player.duration
-                        
-                        self.width = screen * CGFloat(value)
+                        if(!self.showPlayer){
+                            self.viewModel.player.stop()
+                            self.width = 0
+                            self.showPlayer = false
+                            self.finish = true
+                            self.isPlaying = false
+                        }
+                        if self.viewModel.player.isPlaying{
+                            
+                            let screen = UIScreen.main.bounds.width - 30
+                            let value = self.viewModel.player.currentTime / self.viewModel.player.duration
+                            self.width = screen * CGFloat(value)
+                        }
                     }
                 }
             }
